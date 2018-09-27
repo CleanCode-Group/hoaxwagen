@@ -1,0 +1,28 @@
+{
+  "name": "hoaxwagen",
+  "version": "1.0.0",
+  "description": "Hoaxwagen detects Volkswagen in dependencies to prevent tests fraud.",
+  "main": "hoaxwagen.js",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "volkswagen": "^1.4.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "https://github.com/CleanCode-Group/hoaxwagen",
+  "keywords": [
+    "volkswagen",
+    "vw",
+    "defeat",
+    "test",
+    "fraud",
+    "ci"
+  ],
+  "author": "Clean-Code Group",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CleanCode-Group/hoaxwagen/issues"
+  },
+  "homepage": "https://github.com/CleanCode-Group/hoaxwagen"
+}
