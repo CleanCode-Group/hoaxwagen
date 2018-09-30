@@ -1,3 +1,5 @@
+// IDK why I made this file – the project cannot be compiled in TypeScript anyways...
+
 declare module "hoaxwagen" {
     /** This function checks if Volkswagen library exists in node_modules. */
     export function isFraud(): boolean;

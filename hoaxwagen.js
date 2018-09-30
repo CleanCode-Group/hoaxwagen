@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 'use strict';
 
 /********************************************
@@ -21,27 +19,8 @@
  *                                          *
  ********************************************/
 
-// TODO God Bless the Code
-
 const fs = require('fs');
 const path = require('path');
-
-// CLI: Customer Loyalty Index
-if (require.main === module) { // I think we've been called in terminal!
-  const p = getPackages();
-
-  if (p.length === 0) {
-    console.log('✅ Clean!');
-  } else {
-    require('figlet')("IT SUCKS", (err, data) => { // it does...
-      console.log("\nWell, I've got bad news for you...\n");
-      console.log('\x1b[31m%s\x1b[0m\n', data);
-
-      p.forEach((p, i) => console.log(`${i+1}. ${p.name} @ ${p.version} (${p.yarn}) in ${p.path}`));
-      console.log();
-    });
-  }
-}
 
 function vwExists() { // does it?
   try {
@@ -108,7 +87,7 @@ function parseObj(obj, path) {
 }
 
 function monitor() { // call it in Webpack or <insert whatever you want>
-  if (!vwExists()) { // TODO: Beware, BUG! No vw, but it doesn't switch on
+  if (!vwExists()) {
     console.log('✅ Clean from Volkswagen!'); // much clean, very Volkswagen
     return
   }

@@ -1,7 +1,7 @@
 {
   "name": "hoaxwagen",
-  "version": "1.0.1",
-  "description": "Hoaxwagen detects Volkswagen in dependencies to prevent tests fraud.",
+  "version": "1.0.2",
+  "description": "Hoaxwagen detects Volkswagen in dependencies to prevent tests fraud",
   "main": "hoaxwagen.js",
   "devDependencies": {
     "eslint": "^5.6.1",
@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "lint": "eslint hoaxwagen.js"
+    "lint": "eslint hoaxwagen.js cli.js"
   },
   "repository": "https://github.com/CleanCode-Group/hoaxwagen",
   "keywords": [
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/CleanCode-Group/hoaxwagen",
   "bin": {
-    "hoaxwagen": "./hoaxwagen.js"
+    "hoaxwagen": "./cli.js"
   },
   "preferGlobal": true,
   "dependencies": {
