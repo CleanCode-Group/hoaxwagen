@@ -5,13 +5,13 @@ node_js:
   - "8"
 
 before_script:
-  - yarn install
+  - npm install
 
 script:
-  - yarn test
-  - yarn lint
+  - npm test
+  - npm lint
 
 deploy:
-  provider: yarn
+  provider: npm
   email: $EMAIL
   api_key: $AUTH_TOKEN
